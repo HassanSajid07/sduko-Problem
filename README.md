@@ -1,0 +1,8 @@
+# sduko-Problem
+Sudoku is a popular logic-based puzzle that involves filling a 9x9 grid with digits from 1 to 9, ensuring that each column, each row, and each of the nine 3x3 sub-grids contains all the digits from 1 to 9 without repetition. Solving Sudoku puzzles can be challenging, and various techniques and algorithms can be employed to tackle them efficiently.
+
+One approach to solving Sudoku puzzles is by utilizing a combination of forward checking (FC), minimum remaining values (MRV), and the tenner constraint satisfaction problem (CSP). FC is a technique that checks the constraints of the puzzle as each digit is filled in, eliminating options that violate the rules. MRV is a heuristic that prioritizes the assignment of variables with the fewest remaining legal values. The tenner CSP is a framework for solving constraint satisfaction problems that can be adapted to solve Sudoku puzzles.
+
+When using FC, the Sudoku puzzle is represented as a constraint satisfaction problem. Each cell in the grid is considered as a variable, and the constraints are defined to ensure that the digits are placed according to the rules of Sudoku. As each digit is assigned to a cell, FC propagates the constraints forward, eliminating inconsistent options and reducing the search space.
+
+The MRV heuristic is applied to select the variable with the fewest legal values to assign next. This helps in focusing the search on cells that have fewer possibilities, increasing the chances of finding a solution quickly. By selecting variables with MRV, we can minimize the branching factor and improve the efficiency of the search algorithm
